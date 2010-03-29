@@ -1,0 +1,929 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-03-16 19:20:51) [GET]
+  [4;36;1mSQL (1.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 298ms (View: 5, DB: 2) | 200 OK [http://0.0.0.0/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-03-16 19:21:59) [GET]
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 137ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/rails/info/properties]
+  [4;36;1mSQL (1.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (21.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (10.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20100316182828)
+  [4;36;1mSQL (20.8ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (10.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100316182828')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mTask Create (2.4ms)[0m   [0;1mINSERT INTO "tasks" ("created_at", "title", "updated_at", "description") VALUES('2010-03-16 18:37:24', 'przyjsc na szkolenie', '2010-03-16 18:37:24', 'costam costam, przyjechac i byc, i kodzic, i kompilowac, i tak dalej')[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-03-16 19:38:17) [GET]
+  [4;36;1mSQL (2.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 151ms (View: 5, DB: 4) | 200 OK [http://0.0.0.0/rails/info/properties]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:46:15) [GET]
+  [4;36;1mTask Load (3.0ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 52ms (View: 25, DB: 3) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:46:36) [GET]
+  [4;35;1mTask Load (4.1ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 47ms (View: 17, DB: 4) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:49:10) [GET]
+  [4;36;1mTask Load (4.0ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 58ms (View: 28, DB: 4) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:49:22) [GET]
+  [4;35;1mTask Load (2.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 52ms (View: 27, DB: 2) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:49:24) [GET]
+  [4;36;1mTask Load (4.0ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 58ms (View: 27, DB: 4) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:49:30) [GET]
+  [4;35;1mTask Load (2.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 57ms (View: 27, DB: 2) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:49:40) [GET]
+  [4;36;1mTask Load (2.4ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+ERROR: compiling _run_erb_app47views47tasks47index46html46erb RAISED compile error
+/home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:11: syntax error, unexpected ':', expecting ')'
+...(( f.text_area :description  :width => "200").to_s); @output...
+                              ^
+Function body:           def _run_erb_app47views47tasks47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Taski do wykonania </h1>\n\n"
+
+;  @tasks.each do |t| ; @output_buffer.concat "\n<p> "
+; @output_buffer.concat(( t.title ).to_s); @output_buffer.concat " </p>\n\n"
+
+;  end ; @output_buffer.concat " \n\n<h2>Dodaj zadanie</h2>\n"
+
+
+;  form_for :task do |f| ; @output_buffer.concat "\n  <div>"
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "</div>\n  <div>"
+; @output_buffer.concat(( f.text_area :description  :width => "200").to_s); @output_buffer.concat "</div>\n  <dib>"
+; @output_buffer.concat(( submit_tag "zapisz" ).to_s); @output_buffer.concat "</div>\n\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:18:in `compile!'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:66:in `compile'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `synchronize'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `compile'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:26:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/railties/lib/commands/server.rb:49
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:11: syntax error, unexpected ':', expecting ')'
+...(( f.text_area :description  :width => "200").to_s); @output...
+                              ^) on line #11 of app/views/tasks/index.html.erb:
+8: <h2>Dodaj zadanie</h2>
+9: <% form_for :task do |f| %>
+10:   <div><%= f.text_field :title %></div>
+11:   <div><%= f.text_area :description  :width => "200"%></div>
+12:   <dib><%= submit_tag "zapisz" %></div>
+13: 
+14: <% end %>
+
+    app/views/tasks/index.html.erb:18:in `compile!'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:66:in `compile'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `synchronize'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `compile'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:26:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (179.7ms)
+Rendered /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (4.2ms)
+Rendering /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:49:54) [GET]
+  [4;35;1mTask Load (2.2ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 67ms (View: 27, DB: 2) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:50:43) [GET]
+  [4;36;1mTask Load (5.5ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+ERROR: compiling _run_erb_app47views47tasks47index46html46erb RAISED compile error
+/home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:11: syntax error, unexpected '=', expecting ')'
+...t_area :description , :width = 200 ).to_s); @output_buffer.c...
+                              ^
+Function body:           def _run_erb_app47views47tasks47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Taski do wykonania </h1>\n\n"
+
+;  @tasks.each do |t| ; @output_buffer.concat "\n<p> "
+; @output_buffer.concat(( t.title ).to_s); @output_buffer.concat " </p>\n\n"
+
+;  end ; @output_buffer.concat " \n\n<h2>Dodaj zadanie</h2>\n"
+
+
+;  form_for :task do |f| ; @output_buffer.concat "\n  <div>"
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "</div>\n  <div>"
+; @output_buffer.concat(( f.text_area :description , :width = 200 ).to_s); @output_buffer.concat "</div>\n  <dib>"
+; @output_buffer.concat(( submit_tag "zapisz" ).to_s); @output_buffer.concat "</div>\n\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:18:in `compile!'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:66:in `compile'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `synchronize'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `compile'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:26:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/railties/lib/commands/server.rb:49
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:11: syntax error, unexpected '=', expecting ')'
+...t_area :description , :width = 200 ).to_s); @output_buffer.c...
+                              ^) on line #11 of app/views/tasks/index.html.erb:
+8: <h2>Dodaj zadanie</h2>
+9: <% form_for :task do |f| %>
+10:   <div><%= f.text_field :title %></div>
+11:   <div><%= f.text_area :description , :width = 200 %></div>
+12:   <dib><%= submit_tag "zapisz" %></div>
+13: 
+14: <% end %>
+
+    app/views/tasks/index.html.erb:18:in `compile!'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:66:in `compile'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `synchronize'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `compile'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:26:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (168.5ms)
+Rendered /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (4.1ms)
+Rendering /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:50:51) [GET]
+  [4;35;1mTask Load (2.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 66ms (View: 34, DB: 2) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:51:34) [GET]
+  [4;36;1mTask Load (2.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 57ms (View: 28, DB: 2) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:53:18) [GET]
+  [4;35;1mTask Load (2.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+ERROR: compiling _run_erb_app47views47tasks47index46html46erb RAISED compile error
+/home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:15: syntax error, unexpected '=', expecting tASSOC
+...ption , :cols => "60", :rows = "5" ).to_s); @output_buffer.c...
+                              ^
+Function body:           def _run_erb_app47views47tasks47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Taski do wykonania </h1>\n\n"
+
+;  @tasks.each do |t| ; @output_buffer.concat "\n<p> "
+; @output_buffer.concat(( t.title ).to_s); @output_buffer.concat " </p>\n\n"
+
+;  end ; @output_buffer.concat " \n\n<h2>Dodaj zadanie</h2>\n"
+
+
+;  form_for :task, 
+            :url => { :controller => :tasks,
+                      :action => :create
+                    } do |f| ; @output_buffer.concat "   \n                     \n  <div>"
+
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "</div>\n  <div>"
+; @output_buffer.concat(( f.text_area :description , :cols => "60", :rows = "5" ).to_s); @output_buffer.concat "</div>\n  <dib>"
+; @output_buffer.concat(( submit_tag "zapisz" ).to_s); @output_buffer.concat "</div>\n\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:22:in `compile!'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:66:in `compile'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `synchronize'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `compile'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/renderable.rb:26:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+/home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/railties/lib/commands/server.rb:49
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/home/ostros/webdev/szkolenie_ror/1/todo/app/views/tasks/index.html.erb:15: syntax error, unexpected '=', expecting tASSOC
+...ption , :cols => "60", :rows = "5" ).to_s); @output_buffer.c...
+                              ^) on line #15 of app/views/tasks/index.html.erb:
+12:                     } do |f| %>   
+13:                      
+14:   <div><%= f.text_field :title %></div>
+15:   <div><%= f.text_area :description , :cols => "60", :rows = "5" %></div>
+16:   <dib><%= submit_tag "zapisz" %></div>
+17: 
+18: <% end %>
+
+    app/views/tasks/index.html.erb:22:in `compile!'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:66:in `compile'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `synchronize'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:64:in `compile'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:26:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (178.8ms)
+Rendered /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (11.7ms)
+Rendering /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:54:11) [GET]
+  [4;36;1mTask Load (2.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 56ms (View: 28, DB: 2) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 19:54:52) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"", "description"=>""}}
+
+
+ActionController::UnknownAction (No action responded to create. Actions: index):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 19:55:37) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"", "description"=>""}}
+
+
+ActionController::UnknownAction (No action responded to create. Actions: index):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:142:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/ostros/webdev/szkolenie_ror/1/todo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 19:57:47) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"aaa", "description"=>"aaa"}}
+  [4;35;1mTask Create (2.0ms)[0m   [0mINSERT INTO "tasks" ("created_at", "title", "updated_at", "description") VALUES('2010-03-16 18:57:47', NULL, '2010-03-16 18:57:47', NULL)[0m
+Redirected to actionindex
+Completed in 371ms (DB: 2) | 302 Found [http://0.0.0.0/tasks/create]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:57:47) [GET]
+  [4;36;1mTask Load (2.9ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 127ms (View: 50, DB: 3) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 19:58:08) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"", "description"=>"dsafdsfdf"}}
+  [4;35;1mTask Create (1.2ms)[0m   [0mINSERT INTO "tasks" ("created_at", "title", "updated_at", "description") VALUES('2010-03-16 18:58:08', NULL, '2010-03-16 18:58:08', NULL)[0m
+Redirected to actionindex
+Completed in 56ms (DB: 1) | 302 Found [http://0.0.0.0/tasks/create]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:58:09) [GET]
+  [4;36;1mTask Load (3.2ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 54ms (View: 28, DB: 3) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 19:58:16) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"sfsdfdsf", "description"=>"sfdsfdsf"}}
+  [4;35;1mTask Create (1.3ms)[0m   [0mINSERT INTO "tasks" ("created_at", "title", "updated_at", "description") VALUES('2010-03-16 18:58:16', NULL, '2010-03-16 18:58:16', NULL)[0m
+Redirected to actionindex
+Completed in 59ms (DB: 1) | 302 Found [http://0.0.0.0/tasks/create]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:58:17) [GET]
+  [4;36;1mTask Load (3.6ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 81ms (View: 40, DB: 4) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 19:58:28) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"asdsada", "description"=>"asdas"}}
+  [4;35;1mTask Create (1.2ms)[0m   [0mINSERT INTO "tasks" ("created_at", "title", "updated_at", "description") VALUES('2010-03-16 18:58:28', NULL, '2010-03-16 18:58:28', NULL)[0m
+Redirected to actionindex
+Completed in 77ms (DB: 1) | 302 Found [http://0.0.0.0/tasks/create]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:58:29) [GET]
+  [4;36;1mTask Load (3.9ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 58ms (View: 28, DB: 4) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:59:03) [GET]
+  [4;35;1mTask Load (3.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 58ms (View: 28, DB: 4) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 19:59:06) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"asd", "description"=>""}}
+  [4;36;1mTask Create (1.2ms)[0m   [0;1mINSERT INTO "tasks" ("created_at", "title", "updated_at", "description") VALUES('2010-03-16 18:59:06', NULL, '2010-03-16 18:59:06', NULL)[0m
+Redirected to actionindex
+Completed in 58ms (DB: 1) | 302 Found [http://0.0.0.0/tasks/create]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:59:06) [GET]
+  [4;35;1mTask Load (7.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 62ms (View: 29, DB: 8) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 19:59:44) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"asdsad", "description"=>"asdasdsa"}}
+  [4;36;1mTask Create (7.2ms)[0m   [0;1mINSERT INTO "tasks" ("created_at", "title", "updated_at", "description") VALUES('2010-03-16 18:59:45', NULL, '2010-03-16 18:59:45', NULL)[0m
+Redirected to actionindex
+Completed in 100ms (DB: 7) | 302 Found [http://0.0.0.0/tasks/create]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 19:59:45) [GET]
+  [4;35;1mTask Load (6.9ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 76ms (View: 37, DB: 7) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-03-16 20:00:14) [POST]
+  Parameters: {"commit"=>"zapisz", "authenticity_token"=>"cfec1de3b6d84eb8fbf0d5c41ac839b64a10093a", "task"=>{"title"=>"aaa", "description"=>""}}
+  [4;36;1mTask Create (4.2ms)[0m   [0;1mINSERT INTO "tasks" ("created_at", "title", "updated_at", "description") VALUES('2010-03-16 19:00:14', NULL, '2010-03-16 19:00:14', NULL)[0m
+Redirected to actionindex
+Completed in 167ms (DB: 4) | 302 Found [http://0.0.0.0/tasks/create]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 20:00:14) [GET]
+  [4;35;1mTask Load (17.6ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 134ms (View: 61, DB: 18) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 20:00:16) [GET]
+  [4;36;1mTask Load (5.0ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 60ms (View: 27, DB: 5) | 200 OK [http://0.0.0.0/tasks]
+  [4;36;1mTask Load (5.4ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-03-16 20:01:27) [GET]
+  [4;35;1mTask Load (4.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering tasks/index
+Completed in 60ms (View: 28, DB: 5) | 200 OK [http://0.0.0.0/tasks]
