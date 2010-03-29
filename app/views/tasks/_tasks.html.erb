@@ -1,0 +1,4 @@
+<% @tasks.each do |t| %>
+ <%= link_to_unless t.title.nil?,  "<p> #{t.title}</p>", :controller => "tasks", :action => "show", :id => t.id %> 
+
+<% end %> 

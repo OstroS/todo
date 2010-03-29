@@ -1,0 +1,15 @@
+<h2>Dodaj zadanie</h2>
+
+<% if flash[:error] %>
+<div><small><%= flash[:error] %></small></div>
+<% end %>
+<% form_for :task,
+            :url => { :controller => :tasks,
+                      :action => :create
+                    } do |f| %>
+                     
+  <div><%= f.text_field :title %></div>
+  <div><%= f.text_area :description , :cols => "60", :rows => "5" %></div>
+  <div><%= submit_tag "zapisz" %></div>
+ 
+<% end %>

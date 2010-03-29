@@ -1,22 +1,5 @@
 <h1>Taski do wykonania </h1>
 
-<% @tasks.each do |t| %>
- <%= link_to_unless t.title.nil?,  "<p> #{t.title}</p>", :controller => "tasks", :action => "show", :id => t.id %> 
+<%= render :partial => "tasks" %>
 
-<% end %> 
-
-<h2>Dodaj zadanie</h2>
-
-<% if flash[:error] %>
-<div><small><%= flash[:error] %></small></div>
-<% end %>
-<% form_for :task, 
-            :url => { :controller => :tasks,
-                      :action => :create
-                    } do |f| %>   
-                     
-  <div><%= f.text_field :title %></div>
-  <div><%= f.text_area :description , :cols => "60", :rows => "5" %></div>
-  <div><%= submit_tag "zapisz" %></div>
-
-<% end %>
+<%= render :partial => "form" %>
