@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   end
 
   def create
-    task = Task.new(params[:tasks]) #tworzenie nowego taska zgodnie z tablica 
+    task = Task.new(params[:task]) #tworzenie nowego taska zgodnie z tablica 
     task.save
 
     redirect_to :action => :index
