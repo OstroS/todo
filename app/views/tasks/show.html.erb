@@ -1,5 +1,9 @@
 <h1>Twój task</h1>
 
-<%= @task.title %><br />
-<%= @task.description %><br />
-<%= @task.created_at %>
+<p><%= @task.title %></p>
+<p><%= @task.description %></p>
+<p><%= @task.created_at.strftime("Wprowadzono: %H:%M:%S, %m.%d.%Y") %> </p>
+<% if @task.created_at != @task.updated_at %>
+<p><%= @task.updated_at.strftime("Zmieniono: %H:%M:%S, %m.%d.%Y") %> </p>
+<% end %>
+<%= link_to "Powrót", :controller => "tasks", :action => "index" %>
