@@ -1,6 +1,9 @@
 class TasksController < ApplicationController
+  layout 'task'
+  
   def index
     @tasks = Task.all
+    #render :layout => "task"
   end
 
   def create
@@ -16,5 +19,6 @@ class TasksController < ApplicationController
   
   def show
     @task = Task.find(params[:id])
+    render :layout => "task"
   end
 end
