@@ -6,4 +6,5 @@
 <% if @task.created_at != @task.updated_at %>
 <p><%= @task.updated_at.strftime("Zmieniono: %H:%M:%S, %m.%d.%Y") %> </p>
 <% end %>
-<%= link_to "Powrót", :controller => "tasks", :action => "index" %>
+<%= link_to "Powrót", :controller => "tasks", :action => "index" %> | 
+<%= link_to "Nowy task", :controller => "tasks", :action => "new" %>

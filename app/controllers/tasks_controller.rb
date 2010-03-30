@@ -11,14 +11,17 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to :action => "index"  	#if task saved properly redirect to index 
     else				#if not -> get all of tasks and render action index
-      flash[:error] = @task.errors.each {|field, msg| puts msg}
+      flash[:error] = "Błąd! #" + @task.errors.each {|field, msg| puts msg}.to_s
       self.index
-      render :action => "index"
+      render :action => "new"
     end
   end
   
   def show
     @task = Task.find(params[:id])
-    render :layout => "task"
+  end
+  
+  def new
+    #render :partial => "form"
   end
 end
