@@ -1,6 +1,6 @@
 <h1>Twój task</h1>
 
-<p><%= @task.title %></p>
+<p><b><%= @task.title %></b></p>
 <p><%= @task.description %></p>
 <p><%= @task.created_at.strftime("Wprowadzono: %H:%M:%S, %m.%d.%Y") %> </p>
 <% if @task.created_at != @task.updated_at %>
