@@ -1,7 +1,7 @@
 class CreatePriorities < ActiveRecord::Migration
   def self.up
     create_table :priorities do |t|
-
+      t.string :name
       t.timestamps
     end
   end
