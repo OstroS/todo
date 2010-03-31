@@ -35,6 +35,10 @@ class Squares
   end
   
   def sum
+    # complicated, using inject
+    @array.inject {|sum, elt| sum + elt}
+    
+    # the simpler one (my affection to java is fading away with the line below)
     @array.sum
   end
   

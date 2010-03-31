@@ -50,6 +50,7 @@ class HomeWork2ndTest < Test::Unit::TestCase
 
   def test_task4
     smtp = Net::SMTP.new('')
-   puts HomeWork2nd.task4(smtp, "uuu", "ppp", "bbb")
+    # HomeWork2nd.task4(smtp, "uuu", "ppp", "bbb")
+    # dont know how to test?
   end	
 end
