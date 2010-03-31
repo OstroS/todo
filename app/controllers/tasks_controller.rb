@@ -3,6 +3,7 @@ class TasksController < ApplicationController
   
   def index
     @tasks = Task.all
+    @priorities = Priority.all
     #render :layout => "task"
   end
 
