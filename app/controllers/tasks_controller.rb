@@ -8,6 +8,10 @@ class TasksController < ApplicationController
   end
 
   def create
+    # fakup - jak jest null to sie wyklada
+    # trzeba sprawdzic czy jest nilem i jesli tak to olac priorytety
+    # troche to chyba nieladne, no ale co zrobic ;/
+
     priority = Priority.find_by_id params[:task][:priority][:id]
     params[:task].delete :priority
     @task = Task.new(params[:task])  
