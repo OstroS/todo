@@ -11,18 +11,18 @@ class TasksController < ApplicationController
     # fakup - jak jest null to sie wyklada
     # trzeba sprawdzic czy jest nilem i jesli tak to olac priorytety
     # troche to chyba nieladne, no ale co zrobic ;/
-
+    
     priority = Priority.find_by_id params[:task][:priority][:id]
     params[:task].delete :priority
     @task = Task.new(params[:task])  
     @task.priority = priority;
-    if @task.save
-      redirect_to :action => "index"  	#if task saved properly redirect to index 
-    else				#if not -> get all of tasks and render action index
-      flash[:error] = "Błąd! #" + @task.errors.each {|field, msg| puts msg}.to_s
+    @task.save! 
+    redirect_to :action => "index" 
+				 
+    #lapiemy wyjatki
+    rescue #lapie wszystkie wyjatki
       self.index
-      render :action => "new"
-    end
+      render :action => :new
   end
   
   def show

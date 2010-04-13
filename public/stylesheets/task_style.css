@@ -1,4 +1,7 @@
-
+div fieldWithErrors input
+div fieldWithErrors textarea {
+    border-color: red; 
+}
 body {
 margin: 0;
 padding: 0;

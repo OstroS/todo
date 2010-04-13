@@ -1,14 +1,14 @@
 <h2>Dodaj zadanie</h2>
 
-<% if flash[:error] %>
-<div><small><%= flash[:error] %></small></div>
-<% end %>
+<%= error_messages_for :task %>
 <% form_for :task,
             :url => { :controller => :tasks,
                       :action => :create
                     } do |task_form| %>
                      
-  <div><p><% # error_messages_on :title %></p><p><%= task_form.text_field :title %></p></div>
+  <div><p><%  %></p>
+       
+       <p><%= error_message_on @task, :title %><%= task_form.text_field :title %></p></div>
   <div><%= task_form.text_area :description , :cols => "60", :rows => "5" %></div>
   <% task_form.fields_for :priority do |priority_form| %>
     <%= priority_form.radio_button :id, "1" %>1
@@ -18,5 +18,5 @@
     <%= priority_form.radio_button :id, "5" %>5
   <% end %>
   <div><%= submit_tag "zapisz" %></div>
-  <%= error_messages_for :task %>
+
 <% end %>
