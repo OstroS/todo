@@ -5,4 +5,10 @@ class Task < ActiveRecord::Base
   #validates_presence_of :description
   
   accepts_nested_attributes_for :priority
+
+  before_save :urwij
+
+  def urwij
+     self.description += " ...ale urwał callbackiem!"
+  end
 end
