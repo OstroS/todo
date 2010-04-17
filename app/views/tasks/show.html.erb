@@ -9,5 +9,13 @@
 <% unless @task.priority == nil %>
 <p style="color: <%= @task.priority.color %>"><%= @task.priority.name %></p>
 <% end %>
+<% form_for :task,
+            :url => { :controller => :tasks,
+                      :action => :destroy
+                    } do |task_form| %>
+
+<%= hidden_field :task, :id %>
+<%= submit_tag "Usuń taska" %>
+<% end %>
 <%= link_to "Powrót", :controller => "tasks", :action => "index" %> | 
 <%= link_to "Nowy task", :controller => "tasks", :action => "new" %>

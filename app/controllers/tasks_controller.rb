@@ -32,4 +32,13 @@ class TasksController < ApplicationController
   def new
     #render :partial => "form"
   end
+  
+  def destroy
+    Task.find_by_id(params["task"]["id"]).destroy
+    redirect_to :action => "index"
+    
+  rescue
+    self.index
+    render :action => "index"
+  end
 end
