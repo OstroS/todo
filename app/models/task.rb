@@ -11,11 +11,15 @@ class Task < ActiveRecord::Base
 
   def increment_counter
     self.priority.counter += 1
-    self.priority.save
+    self.priority.save!
+  rescue
+    #do nothing, becouse self Task has no priority
   end
   
   def decrement_counter
     self.priority.counter += -1
-    self.priority.save
+    self.priority.save!
+  rescue
+     #do nothing, becouse self Task has no priority
   end
 end
