@@ -1,5 +1,5 @@
 <p><small>| <% @priorities.each do |p| %>
-<font style="color: <%= p.color %>"> <%= p.name %></font> |
+<font style="color: <%= p.color %>"> <%= p.name %>(<%= p.counter %>)</font> |
 <% end %></small></p>
 
 <% @tasks.each do |t| %>

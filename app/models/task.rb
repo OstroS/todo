@@ -6,9 +6,16 @@ class Task < ActiveRecord::Base
   
   accepts_nested_attributes_for :priority
 
-  before_save :urwij
+  before_save :increment_counter
+  before_destroy :decrement_counter
 
-  def urwij
-     self.description += " ...ale urwał callbackiem!"
+  def increment_counter
+    self.priority.counter += 1
+    self.priority.save
+  end
+  
+  def decrement_counter
+    self.priority.counter += -1
+    self.priority.save
   end
 end
