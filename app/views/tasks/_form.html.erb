@@ -12,8 +12,8 @@
   <div><%= task_form.text_area :description , :cols => "60", :rows => "5" %></div>
   <% task_form.fields_for :priority do |priority_form| %>
     <%= priority_form.radio_button :id, "1" %>1
-    <%= priority_form.radio_button :id, '2' %>2
-    <%= priority_form.radio_button :id, "3" %>3
+    <%= priority_form.radio_button :id, "2" %>2
+    <%= priority_form.radio_button :id, "3", :checked => true %>3
     <%= priority_form.radio_button :id, "4" %>4
     <%= priority_form.radio_button :id, "5" %>5
   <% end %>

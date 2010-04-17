@@ -23,9 +23,9 @@ class TasksController < ApplicationController
     redirect_to :action => "index" 
 				 
     #lapiemy wyjatki
-    #rescue #lapie wszystkie wyjatki
-    #  self.index
-    #  render :action => :new
+    rescue #lapie wszystkie wyjatki
+      self.index
+      render :action => :new
   end
   
   def show
