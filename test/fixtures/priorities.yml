@@ -1,7 +1,29 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+Priority ultra high:
+  id: 1
+  name: "Ultra high"
+  color: "#FF0000"
+  counter: 2
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+Priority high:
+  id: 2
+  name: "High"
+  color: "#8B0000"
+  counter: 0
+
+Priority normal:
+  id: 3
+  name: "Normal"
+  color: "Steel Blue"
+  counter: 1
+
+Priority low:
+  id: 4
+  name: "Low"
+  color: "Gold"
+  counter: 0
+
+Priority useless:
+  id: 5
+  name: "Useless"
+  color: "#C0C0C0"
+  counter: 1

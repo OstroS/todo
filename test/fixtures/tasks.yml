@@ -1,7 +1,19 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+Task one:  
+  title: Bardzo ważne zadanie
+  description: "Odebrać dzieci z przedszkola. Inaczej kobieta będzie zła!!"
+  priority_id: 5
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+Task two:
+  title: Piwo z kolegami
+  description: Jutro, pojutrze i jeszcze później. Zimny, żwawy Żywczyk i bangla.
+  priority_id: 1
+
+Task three:
+  title: Check it out!
+  description: http://www.google.pl <- świetna wyszukiwarka, naprawdę polecam!
+  priority_id: 1
+
+Task four:  
+  title: Check it out again!
+  description: http://www.naszaklasas.pl <- Zobacz! Możesz znaleźć starych znajomych z ogólniaka! FE NO ME NAL NE!!
+  priority_id: 3
