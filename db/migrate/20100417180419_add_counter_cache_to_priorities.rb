@@ -2,8 +2,8 @@ class AddCounterCacheToPriorities < ActiveRecord::Migration
   def self.up
     add_column :priorities, :counter, :integer, { :default => 0 }    
 
-    tasks = Task.all.each {|t| t.priority.counter += 1}
-    tasks.each {|t| t.save }   
+    Priority.all.each{|p| p.counter = p.tasks.count; p.save}
+    #nie będę iterował dwa razy po jednej kolekcji, nie będe iterował dwa razy.... 
   
   end
 
